@@ -3,6 +3,7 @@
 #include "ForgeronGameMode.h"
 #include "ForgeronCharacter.h"
 #include "UObject/ConstructorHelpers.h"
+#include "FE_PlayerController.h"
 
 AForgeronGameMode::AForgeronGameMode()
 {
@@ -12,4 +13,6 @@ AForgeronGameMode::AForgeronGameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+
+	PlayerControllerClass = AFE_PlayerController::StaticClass();
 }
